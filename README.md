@@ -29,7 +29,6 @@ An interactive web application that visualizes the working of different sorting 
 * CSS
 * JavaScript
 
-
 ## 📸 How it Looks:
 <img width="575" height="478" alt="image" src="https://github.com/user-attachments/assets/88106418-2931-4d24-acf5-1695a739a077" />
 
