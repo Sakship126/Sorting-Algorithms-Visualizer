@@ -1,4 +1,5 @@
 The project is deployed at https://sakship126.github.io/Sorting-Algorithms-Visualizer/
+
                              # 📊 Sorting Algorithm Visualizer
 
 An interactive web application that visualizes the working of different sorting algorithms through animated bars. Built using HTML, CSS, and JavaScript to make learning sorting techniques simple and engaging.
