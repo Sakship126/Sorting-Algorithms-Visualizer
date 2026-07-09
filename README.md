@@ -35,7 +35,6 @@ An interactive web application that visualizes the working of different sorting 
 
 <img width="538" height="477" alt="image" src="https://github.com/user-attachments/assets/c80f8ab4-e8c0-4de2-ad15-56a1221bacae" />
 
-
 Built to strengthen my understanding of sorting algorithms and JavaScript through interactive visualization.
 
                                     Connect with me
