@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Interactive Sorting Visualizer</h1>
+    <p class="subtitle">Compare sorting algorithms through interactive, step-by-step visualization.</p>
+
+    <!-- controls -->
+    <div class="controls">
+      <div class="control-group">
+        <label for="algoSelect">Algorithm</label>
+        <select id="algoSelect">
+          <option value="bubble">Bubble Sort</option>
+          <option value="selection">Selection Sort</option>
+          <option value="insertion">Insertion Sort</option>
+          <option value="shell">Shell Sort</option>
+          <option value="cocktail">Cocktail Shaker Sort</option>
+          <option value="merge">Merge Sort</option>
+          <option value="quick">Quick Sort</option>
+          <option value="heap">Heap Sort</option>
+          <option value="radix">Radix Sort</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="sizeSlider">Array Size: <span id="sizeVal">50</span></label>
+        <input type="range" id="sizeSlider" min="10" max="100" value="50">
+      </div>
+
+      <div class="control-group">
+        <label for="speedSlider">Animation Speed: <span id="speedVal">50</span></label>
+        <input type="range" id="speedSlider" min="1" max="100" value="50">
+      </div>
+
+      <div class="control-group buttons">
+        <button id="newArrayBtn">New Array</button>
+        <button id="resetBtn">Reset</button>
+        <button id="runBtn" class="primary">Start</button>
+      </div>
+    </div>
+
+    <div class="current-operation">
+    <span>Algorithm Activity</span>
+    <p id="currentOperation">Waiting to start...</p>
+</div>
+
+<div class="progress-container">
+    <div class="progress-header">
+        <span>Animation Progress</span>
+        <span id="progressPercent">0%</span>
+    </div>
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+</div>
+    <!-- stats bar -->
+    <div class="stats">
+      <div><span>Comparisons</span><strong id="statCompare">0</strong></div>
+      <div><span>Array Writes</span><strong id="statSwap">0</strong></div>
+      <div><span>Elapsed Time</span><strong id="statTime">0 ms</strong></div>
+      <div><span>Status</span><strong id="statStatus">Ready</strong></div>
+    </div>
+
+    <!-- bars render here -->
+    <div class="bars" id="bars"></div>
+
+    <!-- algorithm info -->
+    <div class="info" id="info"></div>
+
+    <div class="legend">
+      <span><i class="box default"></i> unsorted</span>
+      <span><i class="box compare"></i> comparing</span>
+      <span><i class="box swap"></i> swapping</span>
+      <span><i class="box sorted"></i> sorted</span>
+    </div>
+  </div>
+
+  <script src="algorithms.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
